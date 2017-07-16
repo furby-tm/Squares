@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
 	 void Update()
 	 {
 	 transform.position = Vector3.Lerp(frometh, untoeth,
-	  Mathf.SmoothStep(0f,0f,
+	  Mathf.SmoothStep(0f,1f,
 	   Mathf.PingPong(Time.time/secondsForOneLength, 1f)
 	 ) );
 	 }
