@@ -5,23 +5,11 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
 
-	 public Transform farEnd;
-	 private Vector3 frometh;
-	 private Vector3 untoeth;
-	 private float secondsForOneLength = 20f;
+	public float speed = 1;
 
-	 void Start()
-	 {
-	 frometh = transform.position;
-	 untoeth = farEnd.position;
-	 }
-
-	 void Update()
-	 {
-	 transform.position = Vector3.Lerp(frometh, untoeth,
-	  Mathf.SmoothStep(0f,2f,
-	   Mathf.PingPong(Time.time/secondsForOneLength, 1f)
-	 ) );
-	 }
+	void Update() {
+//Move cube from (0, 0, 0) to (5, 0, 0) and back.
+transform.position = new Vector3(Mathf.PingPong(Time.time*speed, 5), transform.position.y, transform.position.z);
+}
 
 }
