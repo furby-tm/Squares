@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class DestroyController : MonoBehaviour {
 
+	public GameObject theCanvas;
+	public DeathCanvas canvas;
+
 	// Use this for initialization
 	void Start () {
-
+		canvas = GetComponent<DeathCanvas>();
 	}
 
 	// Update is called once per frame
@@ -19,7 +22,7 @@ public class DestroyController : MonoBehaviour {
 		if (other.gameObject.tag == "Player")
 		{
 			DestroyObject(other.gameObject);
-			Debug.Log("Player died.");
+			canvas.PlayerIsKilled = true;
 	  }
 	}
 }

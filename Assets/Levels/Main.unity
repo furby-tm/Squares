@@ -484,6 +484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6797d4152056046ee8d75fbcb5df334e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+  distance: 1
 --- !u!114 &663618167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,8 +803,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973318851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 12, y: 1, z: 12}
+  m_LocalPosition: {x: 0.26, y: 0.5, z: 0}
+  m_LocalScale: {x: 121.212425, y: 1, z: 514.5932}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -912,7 +914,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098228596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 6.5, y: 1.5, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -929,4 +931,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6797d4152056046ee8d75fbcb5df334e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  farEnd: {fileID: 0}
+  speed: 1
+  distance: 5
