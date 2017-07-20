@@ -281,7 +281,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241111187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.5, z: 1}
+  m_LocalPosition: {x: 1, y: 1.5, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -331,6 +331,7 @@ GameObject:
   - component: {fileID: 644045352}
   - component: {fileID: 644045351}
   - component: {fileID: 644045350}
+  - component: {fileID: 644045356}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -452,6 +453,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &644045356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644045349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479f47de3336c4d2a82badb0f168ed51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathCanvas: {fileID: 0}
+  PlayerIsKilled: 0
 --- !u!1 &663618165
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ca5904af245434e977b55d72e3efdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theCanvas: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!54 &663618168
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -570,7 +586,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 663618165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 1.5, z: -2}
+  m_LocalPosition: {x: 1.15, y: 1.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -803,8 +819,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973318851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26, y: 0.5, z: 0}
-  m_LocalScale: {x: 121.212425, y: 1, z: 514.5932}
+  m_LocalPosition: {x: 2.64, y: 0.5, z: 0}
+  m_LocalScale: {x: 6.399512, y: 0.84549993, z: 435.0885}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -841,6 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ca5904af245434e977b55d72e3efdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theCanvas: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!54 &2098228598
 Rigidbody:
   m_ObjectHideFlags: 0
