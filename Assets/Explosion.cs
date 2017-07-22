@@ -10,11 +10,9 @@ public class Explosion : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		bigExplosionEffect = GameObject.Find("BigExplosionEffect");
-		player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
 	void Update() {
-		
 	}
 }

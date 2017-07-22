@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 moveDirection = Vector3.zero;
 	public CharacterController controller;
 	public GameObject deathCanvas;
+	public GameObject player;
 
 	void Start(){
 		// Store reference to attached component
 		controller = GetComponent<CharacterController>();
 		deathCanvas = GameObject.Find("Canvas");
 		Explosion.bigExplosionEffect.SetActive (false);
+		player = GameObject.FindGameObjectWithTag("Player");
 	}
 
 	void OnDestroy() {
@@ -37,5 +39,6 @@ public class PlayerController : MonoBehaviour {
 		moveDirection.y -= gravity * Time.deltaTime;
 		// Move Character Controller
 		controller.Move(moveDirection * Time.deltaTime);
+		Explosion.bigExplosionEffect.transform.position = transform.position;
 	}
 }
