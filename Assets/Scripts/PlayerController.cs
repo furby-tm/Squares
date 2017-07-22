@@ -15,9 +15,11 @@ public class PlayerController : MonoBehaviour {
 		// Store reference to attached component
 		controller = GetComponent<CharacterController>();
 		deathCanvas = GameObject.Find("Canvas");
+		Explosion.bigExplosionEffect.SetActive (false);
 	}
 
 	void OnDestroy() {
+		Explosion.bigExplosionEffect.SetActive (true);
 		deathCanvas.SetActive(true);
 	}
 
