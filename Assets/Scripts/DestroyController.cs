@@ -22,7 +22,7 @@ public class DestroyController : MonoBehaviour {
 		if (other.gameObject.tag == "Player")
 		{
 			DestroyObject(other.gameObject);
-			canvas.PlayerIsKilled = true;
+			DeathCanvas.PlayerIsKilled = true;
 	  }
 	}
 }

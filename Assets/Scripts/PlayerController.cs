@@ -9,10 +9,16 @@ public class PlayerController : MonoBehaviour {
 
 	private Vector3 moveDirection = Vector3.zero;
 	public CharacterController controller;
+	public GameObject deathCanvas;
 
 	void Start(){
 		// Store reference to attached component
 		controller = GetComponent<CharacterController>();
+		deathCanvas = GameObject.Find("Canvas");
+	}
+
+	void OnDestroy() {
+		deathCanvas.SetActive(true);
 	}
 
 	void Update()
