@@ -6,6 +6,7 @@ public class DestroyController : MonoBehaviour {
 
 	public GameObject theCanvas;
 	public DeathCanvas canvas;
+	public GameObject bigExplosionEffect;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,7 @@ public class DestroyController : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Player")
 		{
+			Explosion.playerHasDied = true;
 			DestroyObject(other.gameObject);
 			DeathCanvas.PlayerIsKilled = true;
 	  }
